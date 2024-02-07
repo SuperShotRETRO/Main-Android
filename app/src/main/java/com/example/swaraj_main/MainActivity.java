@@ -88,4 +88,8 @@ public class MainActivity extends AppCompatActivity {
         sb.append("Pause");
         Toast.makeText(this,sb,Toast.LENGTH_LONG).show();
     }
+
+    public void info(){
+        Toast.makeText(this,"Info",Toast.LENGTH_LONG).show();
+    }
 }
