@@ -1,6 +1,5 @@
 package com.example.swaraj_main;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -28,28 +27,35 @@ public class Calculator extends AppCompatActivity {
 
         calculate = findViewById(R.id.calculate);
 
-        calculate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int a = Integer.parseInt(num1.getText().toString());
-                int b = Integer.parseInt(num2.getText().toString());
+        calculate.setOnClickListener(v -> {
+            int a = Integer.parseInt(num1.getText().toString());
+            int b = Integer.parseInt(num2.getText().toString());
 
-                String oper = op.getText().toString();
+            String oper = op.getText().toString();
 
-                if(oper.equals("+") || oper.equals("sum")){
-                    res.setText(String.format("%s",a+b));
-                } else if (oper.equals("-") || oper.equals("diff")) {
-                    res.setText(String.format("%s",a-b));
-                } else if(oper.equals("*") || oper.equals("mult")){
-                    res.setText(String.format("%s",a*b));
-                } else if(oper.equals("/") || oper.equals("div")){
-                    res.setText(String.format("%s",a-b));
-                } else{
+            switch (oper) {
+                case "+":
+                case "sum":
+                    res.setText(String.format("%s", a + b));
+                    break;
+                case "-":
+                case "diff":
+                    res.setText(String.format("%s", a - b));
+                    break;
+                case "*":
+                case "mult":
+                    res.setText(String.format("%s", a * b));
+                    break;
+                case "/":
+                case "div":
+                    res.setText(String.format("%s", a - b));
+                    break;
+                default:
                     res.setText("Error");
-                }
-
-
+                    break;
             }
+
+
         });
     }
 }
