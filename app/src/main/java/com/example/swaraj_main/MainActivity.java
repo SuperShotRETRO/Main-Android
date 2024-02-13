@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 //                 loginText.setText(String.format("Welcome %s, with password: %s",email.getText().toString(),password.getText().toString()));
                  StringBuffer sb = new StringBuffer();
                  sb.append("Welcome");
-                 Intent intent = new Intent(MainActivity.this,LoginSuccess.class);
+                 Intent intent = new Intent(MainActivity.this,Calculator.class);
 
                  if(email.getText().toString().equals("Swaraj") && password.getText().toString().equals("1234")){
 //                     Toast.makeText(getApplicationContext(),sb,Toast.LENGTH_LONG).show();
