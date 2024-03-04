@@ -10,10 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 public class Calculator extends AppCompatActivity {
 
-//    Bundle recieved;
-
-    Intent mainIntent = new Intent();
-    String password = mainIntent.getStringExtra("password");
+    String email,password;
     EditText num1,num2,op;
 
     TextView res,loginInfo;
@@ -26,6 +23,9 @@ public class Calculator extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculator);
 
+        email = getIntent().getStringExtra("email");
+        password = getIntent().getStringExtra("password");
+
         num1 = findViewById(R.id.num1);
         num2 = findViewById(R.id.num2);
         op = findViewById(R.id.op);
@@ -36,7 +36,7 @@ public class Calculator extends AppCompatActivity {
         calculate = findViewById(R.id.calculate);
         logout = findViewById(R.id.logout);
 
-        loginInfo.setText(String.format("%s",password));
+        loginInfo.setText(String.format("Email: %s\nPassword: %s",email,password));
 
         calculate.setOnClickListener(v -> {
             int a = Integer.parseInt(num1.getText().toString());
