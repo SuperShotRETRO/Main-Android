@@ -15,12 +15,12 @@
         android:layout_marginBottom="600dp" />
 
     <Button
-        android:id="@+id/alrtDisplay"
+        android:id="@+id/alertDisplayBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="495dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="494dp"
         android:text="Display alert" />
 </RelativeLayout>

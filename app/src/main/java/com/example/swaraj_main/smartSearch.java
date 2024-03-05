@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class UtilPage extends AppCompatActivity {
+public class smartSearch extends AppCompatActivity {
 
     EditText searchInput;
 
@@ -19,7 +19,7 @@ public class UtilPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.utilpage);
+        setContentView(R.layout.smartsearch);
 
         searchInput = findViewById(R.id.searchInput);
         searchBtn = findViewById(R.id.searchBtn);

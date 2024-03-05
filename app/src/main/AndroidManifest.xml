@@ -25,11 +25,12 @@
         </activity>
         <activity android:name=".WallpaperChanger">
         </activity>
-        <activity android:name=".UtilPage">
+        <activity android:name=".smartSearch">
         </activity>
         <activity android:name=".email">
         </activity>
-
+        <activity android:name=".arrayDisplayer">
+        </activity>
     </application>
 
 </manifest>

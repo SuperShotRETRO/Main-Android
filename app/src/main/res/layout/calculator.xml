@@ -12,7 +12,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="108dp"
-        android:layout_marginBottom="508dp"
+        android:layout_marginBottom="586dp"
         android:ems="10"
         android:hint="Enter num 1"
         android:inputType="number"
@@ -26,8 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="170dp"
-        android:layout_marginBottom="280dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="375dp"
         android:text="Calculate" />
 
     <TextView
@@ -36,8 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="197dp"
-        android:layout_marginBottom="165dp" />
+        android:layout_marginEnd="227dp"
+        android:layout_marginBottom="319dp" />
 
     <EditText
         android:id="@+id/num2"
@@ -45,8 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="108dp"
-        android:layout_marginBottom="425dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="510dp"
         android:ems="10"
         android:hint="Enter num 2"
         android:inputType="number"
@@ -58,8 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="108dp"
-        android:layout_marginBottom="354dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="439dp"
         android:ems="10"
         android:hint="Enter operations"
         android:inputType="text"
@@ -71,8 +71,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="179dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="663dp"
         android:text="Logout" />
 
     <TextView
@@ -85,14 +85,14 @@
         android:layout_marginBottom="668dp" />
 
     <Button
-        android:id="@+id/chgWallBtn"
+        android:id="@+id/smartSearchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="142dp"
-        android:layout_marginBottom="218dp"
-        android:text="Change Wallpaper" />
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="216dp"
+        android:text="Smart Search" />
 
     <Button
         android:id="@+id/mail"
@@ -100,8 +100,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="163dp"
-        android:layout_marginBottom="106dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="164dp"
         android:text="Mail Service" />
+
+    <Button
+        android:id="@+id/arrayDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="112dp"
+        android:text="Array" />
 
 </RelativeLayout>

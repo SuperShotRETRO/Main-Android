@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UtilPage">
+    tools:context=".smartSearch">
 
     <EditText
         android:id="@+id/searchInput"
@@ -13,10 +13,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="526dp"
+        android:layout_marginBottom="475dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Search" />
+        android:hint="search, locate or dial"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/searchBtn"
