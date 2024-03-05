@@ -46,8 +46,7 @@ public class WallpaperChanger extends AppCompatActivity {
         search.setOnClickListener(v->{
 //            Intent web = new Intent(Intent.ACTION_VIEW);
 //            web.setData(Uri.parse(String.format("https://google.com/search?q=%s",url.getText().toString())));
-//            startActivity(web);
-            if(url.getText().toString().length() == 10 && (int)(url.getText().toString()) )
+//            startActivity(web)
         });
 
         dial.setOnClickListener(v->{
