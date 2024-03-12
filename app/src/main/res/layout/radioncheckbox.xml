@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/dobInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="732dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="D.O.B." />
+
+    <AutoCompleteTextView
+        android:id="@+id/cityInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="658dp"
+        android:text="City" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/degreeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="588dp"
+        android:text="Degree" />
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="472dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/vegBtn"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="Veg" />
+
+        <RadioButton
+            android:id="@+id/nonvegBtn"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="Non-Veg" />
+
+        <RadioButton
+            android:id="@+id/bothBtn"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Both" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/carCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="269dp"
+        android:layout_marginBottom="387dp"
+        android:text="Car" />
+
+    <CheckBox
+        android:id="@+id/bikeCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="387dp"
+        android:text="Bike" />
+
+    <CheckBox
+        android:id="@+id/footCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="387dp"
+        android:text="Foot" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="311dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/resView"
+        android:layout_width="313dp"
+        android:layout_height="172dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="120dp" />
+</RelativeLayout>

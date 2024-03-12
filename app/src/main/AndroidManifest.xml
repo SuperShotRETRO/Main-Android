@@ -13,6 +13,11 @@
         android:theme="@style/Theme.SwarajMain"
         tools:targetApi="31">
         <activity
+            android:name=".RadioNCheckbox"
+            android:exported="false"
+            android:label="@string/title_activity_radio_ncheckbox"
+            android:theme="@style/Theme.SwarajMain" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,16 +26,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Calculator">
-        </activity>
-        <activity android:name=".WallpaperChanger">
-        </activity>
-        <activity android:name=".smartSearch">
-        </activity>
-        <activity android:name=".email">
-        </activity>
-        <activity android:name=".arrayDisplayer">
-        </activity>
+        <activity android:name=".Calculator"></activity>
+        <activity android:name=".WallpaperChanger"></activity>
+        <activity android:name=".smartSearch"></activity>
+        <activity android:name=".email"></activity>
+        <activity android:name=".arrayDisplayer"></activity>
     </application>
 
 </manifest>

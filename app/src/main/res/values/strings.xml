@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Swaraj-Main</string>
+    <string name="title_activity_radio_ncheckbox">RadioNCheckbox</string>
 </resources>
