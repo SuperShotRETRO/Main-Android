@@ -15,7 +15,7 @@ public class Calculator extends AppCompatActivity {
 
     TextView res,loginInfo;
 
-    Button calculate,change,mail,arrayDisplay,logout;
+    Button calculate,change,mail,arrayDisplay,logout,database;
 
 
 
@@ -40,6 +40,7 @@ public class Calculator extends AppCompatActivity {
         mail = findViewById(R.id.mail);
         arrayDisplay = findViewById(R.id.arrayDisplay);
         logout = findViewById(R.id.logout);
+        database = findViewById(R.id.goToDatabasePage);
 
         loginInfo.setText(String.format("Email: %s\nPassword: %s",email,password));
 
@@ -91,6 +92,11 @@ public class Calculator extends AppCompatActivity {
 
         logout.setOnClickListener(v -> {
             Intent intent = new Intent(Calculator.this,MainActivity.class);
+            startActivity(intent);
+        });
+
+        database.setOnClickListener(v -> {
+            Intent intent = new Intent(Calculator.this,Database.class);
             startActivity(intent);
         });
     }

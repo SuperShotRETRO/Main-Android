@@ -31,6 +31,7 @@
         <activity android:name=".smartSearch"></activity>
         <activity android:name=".email"></activity>
         <activity android:name=".arrayDisplayer"></activity>
+        <activity android:name=".Database"></activity>
     </application>
 
 </manifest>
