@@ -11,8 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="623dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="735dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="text" />
@@ -24,7 +24,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="94dp"
-        android:layout_marginBottom="544dp"
+        android:layout_marginBottom="673dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="text" />
@@ -35,8 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="470dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="619dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword" />
@@ -47,7 +47,84 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="154dp"
-        android:layout_marginBottom="386dp"
-        android:text="Register'" />
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="328dp"
+        android:text="Register" />
+
+    <EditText
+        android:id="@+id/rollText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="554dp"
+        android:ems="10"
+        android:hint="Roll no"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/searchStdBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="221dp"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="279dp"
+        android:layout_height="94dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="119dp" />
+
+    <Button
+        android:id="@+id/searchAllBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="275dp"
+        android:text="Search All Records" />
+
+    <EditText
+        android:id="@+id/course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="498dp"
+        android:ems="10"
+        android:hint="Course"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/courseid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="444dp"
+        android:ems="10"
+        android:hint="Course Id"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="388dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="text" />
 </RelativeLayout>
