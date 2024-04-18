@@ -13,7 +13,7 @@ public class DatabaseUtils extends SQLiteOpenHelper {
 
     SQLiteDatabase database;
     public DatabaseUtils(@Nullable Context context) {
-        super(context, "mca.db", null, 1);
+        super(context, "mcaDb", null, 1);
 
         database = getWritableDatabase();
     }
@@ -22,11 +22,22 @@ public class DatabaseUtils extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL("create table users(rollno integer primary key autoincrement, name varchar, email varchar, password varchar, course varchar, courseid varchar, city varchar)");
+        db.execSQL("create table faculty(facid integer primary key autoincrement, name varchar, email varchar,password varchar);");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
+    }
+
+    public String[] fetchTables(){
+        Cursor tables = database.rawQuery("select table_name from mcaDb;",null);
+        if(!(tables.getCount() == 0)){
+            return tables.getColumnNames();
+        }
+        else {
+            return null;
+        }
     }
 
     public boolean register(String  name,String email, String password,String course, String courseid, String city){
@@ -42,10 +53,10 @@ public class DatabaseUtils extends SQLiteOpenHelper {
         long res = database.insert("users",null,cv);
 
         if(res == 1){
-            return false;
+            return true;
         }
         else {
-            return true;
+            return false;
         }
     }
 
@@ -85,6 +96,38 @@ public class DatabaseUtils extends SQLiteOpenHelper {
         }
         else {
             return null;
+        }
+    }
+
+    public boolean updateRecord(Integer rollno, String name,String email, String password,String course, String courseid, String city){
+
+        ContentValues cv = new ContentValues();
+        cv.put("name",name);
+        cv.put("email",email);
+        cv.put("password",password);
+        cv.put("course",course);
+        cv.put("courseid",courseid);
+        cv.put("city",city);
+
+        long res = database.update("users",cv,"rollno=?",new String[]{rollno.toString()});
+
+        if(res == 1){
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public boolean deleteRecord(Integer rollno){
+
+        long res = database.delete("users","rollno=?",new String[]{rollno.toString()});
+
+        if(res == 1){
+            return false;
+        }
+        else {
+            return true;
         }
     }
 }

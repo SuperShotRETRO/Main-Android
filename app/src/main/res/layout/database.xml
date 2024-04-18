@@ -12,7 +12,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="94dp"
-        android:layout_marginBottom="735dp"
+        android:layout_marginBottom="559dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="text" />
@@ -24,7 +24,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="94dp"
-        android:layout_marginBottom="673dp"
+        android:layout_marginBottom="503dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="text" />
@@ -36,7 +36,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="94dp"
-        android:layout_marginBottom="619dp"
+        android:layout_marginBottom="440dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword" />
@@ -47,8 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="149dp"
-        android:layout_marginBottom="328dp"
+        android:layout_marginEnd="259dp"
+        android:layout_marginBottom="128dp"
         android:text="Register" />
 
     <EditText
@@ -58,7 +58,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="94dp"
-        android:layout_marginBottom="554dp"
+        android:layout_marginBottom="626dp"
         android:ems="10"
         android:hint="Roll no"
         android:inputType="text" />
@@ -69,8 +69,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="221dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginBottom="191dp"
         android:text="Search" />
 
     <TextView
@@ -79,8 +79,8 @@
         android:layout_height="94dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="119dp" />
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="22dp" />
 
     <Button
         android:id="@+id/searchAllBtn"
@@ -88,8 +88,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="114dp"
-        android:layout_marginBottom="275dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="191dp"
         android:text="Search All Records" />
 
     <EditText
@@ -99,7 +99,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="94dp"
-        android:layout_marginBottom="498dp"
+        android:layout_marginBottom="382dp"
         android:ems="10"
         android:hint="Course"
         android:inputType="text" />
@@ -111,7 +111,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="94dp"
-        android:layout_marginBottom="444dp"
+        android:layout_marginBottom="320dp"
         android:ems="10"
         android:hint="Course Id"
         android:inputType="text" />
@@ -123,8 +123,37 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="94dp"
-        android:layout_marginBottom="388dp"
+        android:layout_marginBottom="266dp"
         android:ems="10"
         android:hint="City"
         android:inputType="text" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="128dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="128dp"
+        android:text="Delete" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="723dp" />
 </RelativeLayout>
