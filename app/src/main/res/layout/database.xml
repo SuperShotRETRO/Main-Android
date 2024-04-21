@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="259dp"
+        android:layout_marginEnd="281dp"
         android:layout_marginBottom="128dp"
         android:text="Register" />
 
@@ -69,8 +69,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="242dp"
-        android:layout_marginBottom="191dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="190dp"
         android:text="Search" />
 
     <TextView
@@ -88,8 +88,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="191dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="190dp"
         android:text="Search All Records" />
 
     <EditText
@@ -134,7 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="155dp"
+        android:layout_marginEnd="179dp"
         android:layout_marginBottom="128dp"
         android:text="Update" />
 
@@ -144,16 +144,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="57dp"
-        android:layout_marginBottom="128dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="129dp"
         android:text="Delete" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/tableSelector"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="189dp"
-        android:layout_marginBottom="723dp" />
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="688dp" />
+
 </RelativeLayout>

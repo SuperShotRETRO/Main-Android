@@ -1,5 +1,6 @@
 package com.example.swaraj_main;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -8,6 +9,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.text.Editable;
 
 import androidx.annotation.Nullable;
+
+import java.util.ArrayList;
 
 public class DatabaseUtils extends SQLiteOpenHelper {
 
@@ -30,17 +33,23 @@ public class DatabaseUtils extends SQLiteOpenHelper {
 
     }
 
-    public String[] fetchTables(){
-        Cursor tables = database.rawQuery("select table_name from mcaDb;",null);
-        if(!(tables.getCount() == 0)){
-            return tables.getColumnNames();
+    @SuppressLint("Range")
+    public ArrayList<String> fetchTables(){
+        ArrayList<String> tableNAmes = new ArrayList<String>();
+        Cursor tables = database.rawQuery("select name from sqlite_master where type='table'",null);
+        if(tables.moveToFirst()){
+            while(!tables.isAfterLast()){
+                tableNAmes.add(tables.getString(tables.getColumnIndex("name")));
+                tables.moveToNext();
+            }
+            return tableNAmes;
         }
         else {
             return null;
         }
     }
 
-    public boolean register(String  name,String email, String password,String course, String courseid, String city){
+    public boolean register(String tableName,String  name,String email, String password,String course, String courseid, String city){
 
         ContentValues cv = new ContentValues();
         cv.put("name",name);
@@ -50,7 +59,7 @@ public class DatabaseUtils extends SQLiteOpenHelper {
         cv.put("courseid",courseid);
         cv.put("city",city);
 
-        long res = database.insert("users",null,cv);
+        long res = database.insert(tableName,null,cv);
 
         if(res == 1){
             return true;
@@ -60,9 +69,9 @@ public class DatabaseUtils extends SQLiteOpenHelper {
         }
     }
 
-    public Cursor getRecords(){
+    public Cursor getRecords(String tableName){
 
-        Cursor record = database.rawQuery("select * from users",null);
+        Cursor record = database.rawQuery(String.format("select * from %s",tableName),null);
         if(!(record.getCount() == 0)){
             return record;
         }
@@ -71,16 +80,6 @@ public class DatabaseUtils extends SQLiteOpenHelper {
         }
     }
 
-    public Cursor searchRecord(int rollno){
-
-        Cursor record = database.rawQuery(String.format("select * from users where rollno = %s",rollno),null);
-        if(record.getCount() > 0){
-            return record;
-        }
-        else {
-            return null;
-        }
-    }
     public Cursor searchRecord(Editable rollno, Editable email, Editable course, Editable courseid, Editable city){
 
         String rollnoQ = rollno.toString().isEmpty()?"":String.format("rollno = %s and",rollno.toString());
@@ -99,7 +98,7 @@ public class DatabaseUtils extends SQLiteOpenHelper {
         }
     }
 
-    public boolean updateRecord(Integer rollno, String name,String email, String password,String course, String courseid, String city){
+    public boolean updateRecord(String tableName,Integer rollno, String name,String email, String password,String course, String courseid, String city){
 
         ContentValues cv = new ContentValues();
         cv.put("name",name);
@@ -109,7 +108,7 @@ public class DatabaseUtils extends SQLiteOpenHelper {
         cv.put("courseid",courseid);
         cv.put("city",city);
 
-        long res = database.update("users",cv,"rollno=?",new String[]{rollno.toString()});
+        long res = database.update(tableName,cv,"rollno=?",new String[]{rollno.toString()});
 
         if(res == 1){
             return false;
@@ -119,9 +118,9 @@ public class DatabaseUtils extends SQLiteOpenHelper {
         }
     }
 
-    public boolean deleteRecord(Integer rollno){
+    public boolean deleteRecord(String tableName,Integer rollno){
 
-        long res = database.delete("users","rollno=?",new String[]{rollno.toString()});
+        long res = database.delete(tableName,"rollno=?",new String[]{rollno.toString()});
 
         if(res == 1){
             return false;
